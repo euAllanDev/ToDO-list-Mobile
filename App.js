@@ -62,13 +62,13 @@ export default function App() {
         style={styles.container}
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       >
-        {/* Header */}
+        
         <View style={styles.header}>
           <Text style={styles.headerLabel}>MINHAS TAREFAS</Text>
           <Text style={styles.headerCount}>{tasks.length} pendente{tasks.length !== 1 ? 's' : ''}</Text>
         </View>
 
-        {/* Input area */}
+        
         <View style={styles.inputRow}>
           <TextInput
             style={styles.input}
@@ -85,10 +85,10 @@ export default function App() {
           </TouchableOpacity>
         </View>
 
-        {/* Divider */}
+       
         <View style={styles.divider} />
 
-        {/* Task List */}
+       
         {tasks.length === 0 ? (
           <View style={styles.emptyState}>
             <Text style={styles.emptyIcon}>✓</Text>
